@@ -1,6 +1,6 @@
 import dayjs from "dayjs";
 
-import db from "./../src/app/db.js";
+import db from "../src/app/db.js";
 import { ObjectId } from "mongodb";
 import joi from "joi";
 

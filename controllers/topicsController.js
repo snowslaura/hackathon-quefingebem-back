@@ -1,4 +1,4 @@
-import db from "./../src/app/db.js"
+import db from "../src/app/db.js"
 import joi from "joi";
 
 export async function postTopics(req,res){

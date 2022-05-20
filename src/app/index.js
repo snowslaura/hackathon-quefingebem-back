@@ -4,6 +4,7 @@ import dotenv from "dotenv"
 
 import questionsRouter from "../../routes/questionsRouter.js";
 import topicsRouter from "../../routes/topicsRouter.js";
+import answerRouter from "../../routes/answerRouter.js";
 
 
 dotenv.config();
@@ -15,6 +16,7 @@ app.use(json());
 
 app.use(questionsRouter);
 app.use(topicsRouter)
+app.use(answerRouter)
 const PORT = process.env.PORT || 5000
 
 app.listen(PORT, ()=>{
