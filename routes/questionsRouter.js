@@ -3,7 +3,7 @@ import { Router } from "express";
 import {
   postQuestions,
   getQuestions,
-} from "../controllers/questionsControllers.js";
+} from "../controllers/questionsController.js";
 
 const questionsRouter = Router();
 

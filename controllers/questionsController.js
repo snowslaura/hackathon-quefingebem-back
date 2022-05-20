@@ -35,10 +35,7 @@ export async function postQuestions(req, res) {
 
 export async function getQuestions(req, res) {
   try {
-    const questions = await db
-      .collection("questions")
-      .find({})
-      .toArray();
+    const questions = await db.collection("questions").find({}).toArray();
     res.send(questions);
   } catch (err) {
     console.log("Deu xabu no envio da pergunta!", err);

@@ -2,7 +2,7 @@ import { Router } from "express";
 import {
     getTopics, 
     postTopics,
-} from "../controllers/topicsControllers.js";
+} from "../controllers/topicsController.js";
 
 const topicsRouter = Router();
 
