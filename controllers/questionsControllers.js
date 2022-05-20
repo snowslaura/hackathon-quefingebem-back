@@ -39,7 +39,7 @@ export async function getQuestions(req, res) {
       .collection("questions")
       .find({})
       .toArray();
-    res.sendStatus(201).send(questions);
+    res.send(questions);
   } catch (err) {
     console.log("Deu xabu no envio da pergunta!", err);
     res.sendStatus(500);
